@@ -1,0 +1,105 @@
+body {
+	margin: 0px;
+	background: #FBEFBD;
+	font-family: Verdana;
+	text-align: justify;
+}
+
+header {
+	background: #384951;
+	color: #F2D392;
+	padding: 15px;
+	font-size: 48px;
+	position: sticky;
+	top: 0;
+}
+
+header div span {
+	font-size: 18px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li a:link{
+	color: #B9CDCC;
+	float: left;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	}
+	li a:visited{
+	color: #B9CDCC;
+	}
+	li a:hover {
+	background-color: #F2D392;
+	color: black;
+	}
+	li a.active {
+	background-color: rgb(138,177,125);
+	color: white;
+	}
+	
+.sprite {
+	width: 20px;
+	height: 20px;
+}
+
+p {
+	display:none;
+	font-size: 12px;
+}
+li:hover p {
+		display: block;
+}
+
+.part1-pic {
+    width: 100%;
+}
+
+.part1, .part2, .part3 {
+	margin: 0px 240px 20px 240px;
+}
+
+.part1 div, .part2 div, .part3 div {
+	font-size: 30px;
+}
+
+.part1 div span, .part2 div span, .part3 div span {
+	font-size: 16px;
+}
+
+.part2 {
+	background: #E37979;
+}
+
+.grid-container1, .grid-container2 {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container1 {
+	  grid-template-columns: 250px 500px;
+}
+
+.grid-container2 {
+  grid-template-columns: 500px 250px;
+}
+
+.animation {
+	width: 100px;
+    height: 100px;
+    position: absolute;
+	left: 200px;
+	animation: slide 6s infinite;
+}
+@keyframes slide{
+	0%   {left:200px}
+	50%  {left:400px;}
+	100% {left:200px;}
+}
